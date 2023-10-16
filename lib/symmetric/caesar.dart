@@ -6,6 +6,10 @@ abstract class Caesar {
 
   /// [decrpyt] gives out the plaintext i.e.  decrypted form
   String decrypt(String cipherText, int shift);
+
+  static Caesar getInstance({bool takeSpace = false}) {
+    return CaesarImpl(takeSpace: takeSpace);
+  }
 }
 
 class CaesarImpl implements Caesar {
