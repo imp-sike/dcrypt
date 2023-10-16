@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 void main() {
   group("Caeser cipher encryption test", () {
-    Caesar caesar = CaesarImpl();
+    Caesar caesar = Caesar.getInstance();
     test('Caeser cipher encrption when everything is fine 1', () async {
       String ct = caesar.encrypt("Hello", 3);
       String ect = "Khoor";
@@ -40,7 +40,7 @@ void main() {
   });
 
   group("Caeser cipher decryption test", () {
-    Caesar caesar = CaesarImpl();
+    Caesar caesar = Caesar.getInstance();
 
     test('Caeser cipher decryption when everything is fine', () async {
       String ct = caesar.decrypt("Khoor", 3);
