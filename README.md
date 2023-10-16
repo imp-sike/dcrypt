@@ -25,3 +25,16 @@ PlayFair playFair = PlayFair.getInstance();
 print(playFair.encrypt("Hello World", "SARAH"));
 print(playFair.decrypt("KHYFFLHPOI", "SARAH"));
 ```
+
+3. Hill Cipher
+
+```dart
+import 'package:dcrypt/dcrypt.dart';
+
+Hill hill = Hill.getInstance();
+List<List<int>> key = [
+    [3, 6],
+    [1, 4]
+];
+print(hill.encrypt("Hello", key));
+```
