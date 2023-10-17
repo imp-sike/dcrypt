@@ -13,4 +13,8 @@ void main() {
     [1, 4]
   ];
   print(hill.encrypt("Hello", key));
+
+  Vigenere vigenere = Vigenere.getInstance();
+  print(vigenere.encrypt("Hello World", "vig"));
+  print(vigenere.decrypt("ajkol", "vig"));
 }

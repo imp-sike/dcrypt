@@ -38,3 +38,13 @@ List<List<int>> key = [
 ];
 print(hill.encrypt("Hello", key));
 ```
+
+4. Vignere Cipher
+
+```dart
+import 'package:dcrypt/dcrypt.dart';
+
+Vigenere vigenere = Vigenere.getInstance();
+print(vigenere.encrypt("Hello World", "vig"));
+print(vigenere.decrypt("ajkol", "vig"));
+```
