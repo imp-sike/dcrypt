@@ -1,5 +1,3 @@
-import 'package:dcrypt/symmetric/caesar.dart';
-
 /// [Vigenere] is a newer form of Caeser Cipher
 /// It has key = SOMETHING and plaintext = HEHE
 /// The key is appended with itself for the size of plain text
